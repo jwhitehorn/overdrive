@@ -192,11 +192,11 @@ EOF
     cc_build_path = Rails.root.join('tasks', 'cc_build.rake')
     maybe_trace   = CruiseControl::Log.verbose? ? " << '--trace'" : ""
     
-    if project.uses_bundler?
-      %{BUNDLE_GEMFILE=#{project.gemfile} #{Platform.bundle_cmd} exec rake -e "load '#{cc_build_path}'; ARGV << '--nosearch'#{maybe_trace} << 'cc:build'; Rake.application.run; ARGV.clear"}
-    else  
+    #if project.uses_bundler?
+    #  %{BUNDLE_GEMFILE=#{project.gemfile} #{Platform.bundle_cmd} exec rake -e "load '#{cc_build_path}'; ARGV << '--nosearch'#{maybe_trace} << 'cc:build'; Rake.application.run; ARGV.clear"}
+    #else  
       %{#{Platform.interpreter} -e "require 'rubygems' rescue nil; require 'rake'; load '#{cc_build_path}'; ARGV << '--nosearch'#{maybe_trace} << 'cc:build'; Rake.application.run; ARGV.clear"}
-    end
+    #end
   end
   
   def in_clean_environment_on_local_copy(&block)
