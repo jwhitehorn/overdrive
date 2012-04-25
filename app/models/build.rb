@@ -179,10 +179,10 @@ EOF
   end
 
   def bundle_install
-    [ 
-      bundle("check", "--gemfile=#{project.gemfile}"),
-      bundle("install", project.bundler_args)
-    ].join(" || ")
+    #[ 
+    #  bundle("check", "--gemfile=#{project.gemfile}"),
+    #  bundle("install", project.bundler_args)
+    #].join(" || ")
   end
 
   def rake
