@@ -1,18 +1,3 @@
-PATH
-  remote: .
-  specs:
-    cruisecontrolrb (2.0.0pre1)
-      abstract (= 1.0.0)
-      api_cache (= 0.2.0)
-      bundler
-      httparty (= 0.6.1)
-      jquery-rails (= 1.0.9)
-      rack (= 1.2.3)
-      rails (= 3.0.7)
-      rake (= 0.8.7)
-      tzinfo (= 0.3.27)
-      xml-simple (= 1.0.16)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -96,7 +81,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cruisecontrolrb!
+  abstract (= 1.0.0)
+  api_cache (= 0.2.0)
+  bundler
+  httparty (= 0.6.1)
+  jquery-rails (= 1.0.9)
   mocha (= 0.9.12)
+  rack (= 1.2.3)
   rack-test
+  rails (= 3.0.7)
+  rake (= 0.8.7)
   rcov (= 0.9.9)
+  tzinfo (= 0.3.27)
+  xml-simple (= 1.0.16)
