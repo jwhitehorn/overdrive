@@ -9,6 +9,7 @@ gem "api_cache", "0.2.0"
 gem "xml-simple", '1.0.16'
 gem "jquery-rails", '1.0.9'
 gem "abstract", "1.0.0"
+gem 'sqlite3'
 
 group :development do
  gem "rcov", '0.9.9'
