@@ -3,7 +3,7 @@ require File.expand_path('../../lib/cruise_control/version', __FILE__)
 
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "rails/test_unit/railtie"
+require 'rails/all'
 
 require 'fileutils'
 require 'xmlsimple'

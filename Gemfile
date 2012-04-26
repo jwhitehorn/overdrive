@@ -1,13 +1,12 @@
 source "http://rubygems.org"
 
-gem "rails", "3.0.7"
+gem "rails", "~> 3.0.7"
 gem "tzinfo", "0.3.27"
-gem "rack", "1.2.3"
+gem "rack"
 gem "bundler"
 gem "httparty", "0.6.1"
 gem "api_cache", "0.2.0"
 gem "xml-simple", '1.0.16'
-gem  "rake", "0.8.7"
 gem "jquery-rails", '1.0.9'
 gem "abstract", "1.0.0"
 
